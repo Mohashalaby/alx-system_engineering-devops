@@ -1,1 +1,1 @@
-this script print output 
+tis script printing acnfused smile on screen
