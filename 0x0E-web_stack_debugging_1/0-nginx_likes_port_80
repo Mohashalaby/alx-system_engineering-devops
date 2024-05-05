@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
-#Configures an Ngins server to listen on port 80.
-
-#remove the default Nginx configuration file
-rm /etc/nginx/site-enabled/default
-#Configure Nginx to listen on port 80 for all active IPvA IPs
-in -s /etc/nginx/sitea-available/default /etc/nginx/sites-enabled/default
-# restart nginx
+# Open the 80 port
+sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
 service nginx restart
+
